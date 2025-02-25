@@ -1,0 +1,24 @@
+body {  
+    background: #000;  
+    color: #0f0;  
+    font-family: 'Courier New';  
+    margin: 0;  
+    padding: 20px;  
+}  
+
+.neon {  
+    text-shadow: 0 0 10px #0f0;  
+    animation: glitch 1s infinite;  
+}  
+
+.grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    gap: 15px;  
+}  
+
+@keyframes glitch {  
+    0% { text-shadow: 0 0 10px #0f0; }  
+    50% { text-shadow: -2px 0 #f00, 2px 0 #00f; }  
+    100% { text-shadow: 0 0 10px #0f0; }  
+}  
