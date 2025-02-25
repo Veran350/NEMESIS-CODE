@@ -1,0 +1,9 @@
+[Unit]  
+Description=Nemesis Autostart  
+
+[Service]  
+ExecStart=/data/data/com.termux/files/home/NEMESIS-CODE/install.sh  
+Restart=always  
+
+[Install]  
+WantedBy=multi-user.target  
